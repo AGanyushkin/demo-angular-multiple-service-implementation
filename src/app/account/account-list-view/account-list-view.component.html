@@ -1,0 +1,8 @@
+
+<div *ngIf="accounts$">
+
+  <div *ngFor="let account of accounts$ | async" >
+    <b>{{account.name}}</b> with id {{account.id}}
+  </div>
+
+</div>
